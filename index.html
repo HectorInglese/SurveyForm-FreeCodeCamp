@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form | Hector Inglese</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
+</head>
+<body>
+
+
+    <div class="body-container">
+
+
+        <form  id="survey-form">
+
+            <header>
+                <h1 id="title">Survey Form</h1>
+                <p id="description">A survey for FREECODECAMP</p>
+            </header>
+
+            <div class="form-group">
+                <label class="title" id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" required placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label class="title" id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label class="title" id="number-label" for="number">Age</label>
+                <input type="number" name="number" id="number" required min="18" max="99" placeholder="1-99">
+            </div>
+
+            <div class="form-group">
+                <p class="dropdown title">Choose one</p>
+
+                <select name="dropdown" id="dropdown">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p class="radio title">Choose one</p>
+
+                <div class="opt-group">
+                    <input type="radio" name="radio" id="radio1" value="rad1"> 
+                    <label for="radio1">Option 1</label>
+                </div>
+
+                <div class="opt-group">
+                    <input type="radio" name="radio" id="radio2" value="rad2">
+                    <label for="radio2">Option 2</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p class="checkbox title">Choose any</p>
+
+                <div class="opt-group">
+                    <input type="checkbox" name="opt1" id="opt1" value="opt1">
+                    <label for="opt1">Option 1</label>
+                </div>
+
+                <div class="opt-group">
+                    <input type="checkbox" name="opt2" id="opt2" value="opt2">
+                    <label for="opt2">Option 2</label>
+                </div>
+
+                <div class="opt-group">
+                    <input type="checkbox" name="opt3" id="opt3" value="opt3">
+                    <label for="opt3">Option 3</label>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <p class="textarea title">Let us know your feedback</p>
+                <textarea name="textarea" id="textarea" ></textarea>
+            </div>
+
+            <div class="form-group">
+                <button id="submit" type="submit">SUBMIT</button>
+            </div>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
